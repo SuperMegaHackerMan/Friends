@@ -1,10 +1,17 @@
 {
-  "enabledPlugins": {
-    "ui-ux-pro-max@ui-ux-pro-max-skill": true
-  },
   "permissions": {
     "allow": [
-      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack)"
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack)",
+      "Read(//c/Users/zarfa/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/**)",
+      "Bash(python3 skills/ui-ux-pro-max/scripts/search.py \"personal social friend group portfolio lifestyle\" --design-system -p \"Friends Website\")",
+      "Bash(py --version)",
+      "Bash(py skills/ui-ux-pro-max/scripts/search.py \"personal social friend group lifestyle vibrant warm\" --design-system -p \"Friends Website\")",
+      "Bash(py src/ui-ux-pro-max/scripts/search.py \"personal social friend group lifestyle vibrant warm\" --design-system -p \"Friends Website\")",
+      "Bash(npm run:*)",
+      "Bash(winget install:*)"
     ]
+  },
+  "enabledPlugins": {
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true
   }
 }
