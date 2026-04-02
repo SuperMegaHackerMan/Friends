@@ -249,3 +249,51 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ============================================
+   ANIMATION UTILITY CLASSES
+   Use these as className instead of inline styles
+   ============================================ */
+
+@layer utilities {
+  /* Marquee */
+  .animate-marquee        { animation: marquee-scroll 35s linear infinite; }
+  .animate-marquee-slow   { animation: marquee-scroll 40s linear infinite; }
+
+  /* Rainbow text */
+  .animate-rainbow-text   { animation: rainbow-text-anim 1.5s linear infinite; }
+
+  /* Blink */
+  .animate-blink          { animation: blink-anim 0.7s step-end infinite; }
+  .animate-blink-med      { animation: blink-anim 1s step-end infinite; }
+  .animate-blink-slow     { animation: blink-anim 1.5s step-end infinite; }
+  .animate-blink-cursor   { animation: blink-anim 0.6s step-end infinite; }
+
+  /* Spin */
+  .animate-spin-cw        { animation: spin-cw 3s linear infinite; }
+  .animate-spin-cw-fast   { animation: spin-cw 2s linear infinite; }
+  .animate-spin-cw-slow   { animation: spin-cw 8s linear infinite; }
+  .animate-spin-cw-xslow  { animation: spin-cw 10s linear infinite; }
+  .animate-spin-ccw       { animation: spin-ccw 2s linear infinite; }
+
+  /* Bounce */
+  .animate-bounce-ud         { animation: bounce-ud 0.8s ease-in-out infinite; }
+  .animate-bounce-ud-delayed { animation: bounce-ud 0.8s ease-in-out 0.4s infinite; }
+  .animate-bounce-ud-slow    { animation: bounce-ud 1s ease-in-out infinite; }
+  .animate-bounce-ud-slow-delayed { animation: bounce-ud 1s ease-in-out 0.5s infinite; }
+
+  /* Other motion */
+  .animate-wobble         { animation: wobble-anim 2s ease-in-out infinite; }
+  .animate-neon-pulse     { animation: neon-pulse-anim 2s ease-in-out infinite; }
+  .animate-neon-flicker   { animation: neon-flicker-anim 3s linear infinite; }
+  .animate-star-twinkle   { animation: star-twinkle-anim 1.5s ease-in-out infinite; }
+  .animate-float-drift    { animation: float-drift-anim 3s ease-in-out infinite; }
+  .animate-shake          { animation: shake-anim 2s ease-in-out infinite; }
+  .animate-clippy-idle    { animation: clippy-idle-anim 4s ease-in-out infinite; }
+  .animate-rainbow-border { animation: rainbow-border-anim 3s linear infinite; }
+  .animate-rainbow-border-slow { animation: rainbow-border-anim 4s linear infinite; }
+  .animate-pulse-scale    { animation: pulse-scale-anim 1.5s ease-in-out infinite; }
+  .animate-pulse-scale-fast { animation: pulse-scale-anim 1.2s ease-in-out infinite; }
+  .animate-slide-in-left  { animation: slide-in-left-anim 0.35s ease-out; }
+  .animate-cursor-blink   { animation: cursor-blink 1s step-end infinite; }
+}
